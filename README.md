@@ -11,3 +11,16 @@ A Ben Eater-free breadboard computer based on the 65c02 chip.
 | 74HC00 NAND Gate   | Quad 2-input NAND gate               | Address decoding or glue logic     | [74HC00](https://seli.tn/product/7400-ci-4-portes-logiques-non-et/)        |
 | PCF8574T I2C Module | I2C I/O Expander                     | Simplify LCD or peripheral interfacing | [PCF8574T](https://seli.tn/product/pcf8574t-module-i2c-pour-clavier/) |
 | 16x2 LCD Display   | LCD Display                          | Program output                     | [16x02 LCD](https://seli.tn/product/afficheur-lcd/)
+
+## **Software**
+
+### Compiler suite
+
+For this project, I am using the [cc65](https://cc65.github.io) compiler and Make.
+| Component          | Description                          |
+|--------------------|--------------------------------------|
+| cc65               | C Compiler                           |
+| ca65               | Assembler                            |
+| cl65               | Linker                               |
+| ar65 (Optional)    | Archiver                             |
+| Make               | Generator           
