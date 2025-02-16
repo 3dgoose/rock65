@@ -36,12 +36,12 @@ For this project, I am using the [cc65](https://cc65.github.io) compiler and Mak
 | cl65               | Linker                               |
 | ar65 (Optional)    | Archiver                             |
 
-## **Software**
- 
-There is no final goal except, as mentioned earlier, to develop games. I chose a "big" EEPROM (64Kb) because the games are in C rather than human-written, optimized assembly.
-I even planned to run an LFS (Linux From Scratch).
-
 ### Ideas
 
-- A shell with RTC
-- 
+See [this gist](https://gist.github.com/3dgoose/a7d07810e92be5e75788fb8ef172888b) for reference.
+
+## Architecture and diagram
+
+> [!IMPORTANT]  
+> This project is in development. Components and chips aren't bought.
+
