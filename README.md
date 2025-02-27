@@ -34,14 +34,15 @@ For this project, I am using the [cc65](https://cc65.github.io) compiler and Mak
 | cc65               | C Compiler                           |
 | ca65               | Assembler                            |
 | cl65               | Linker                               |
-| ar65 (Optional)    | Archiver                             |
+| nvim               | Editor                               |
 
 ### Ideas
 
-See [this gist](https://gist.github.com/3dgoose/a7d07810e92be5e75788fb8ef172888b) for reference.
+- Shell
+- Point&Click
+- Platformer
 
 ## Architecture and diagram
 
 > [!IMPORTANT]  
 > This project is in development. Components and chips aren't bought.
-
