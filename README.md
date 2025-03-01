@@ -1,18 +1,9 @@
 # 65b02
 
 A Ben Eater-free breadboard computer based on the 65c02 chip.
+This repository will contain the hardware diagram and firmware (that acts like a bootloader).
 
-## **Purpose**
-
-The primary purpose of this project is, excepted learning and flexing my skills, to have a small microcontroller (that could later evolve and scale to PCB) that can run games.
-
-Yet another 65c02 modern console.
-
-### Why 6502
-
-I really like the 65XX family, and this one in particular. It has a wider ecosystem than the 65816 (SNES) and an affordable, easily found CMOS version.
-
-## **Summary of Components**
+## Summary of Components
 
 | Component          | Description                          | Use in Project                     | Link                                      |
 |--------------------|--------------------------------------|------------------------------------|-------------------------------------------|
@@ -24,7 +15,7 @@ I really like the 65XX family, and this one in particular. It has a wider ecosys
 | 16x2 LCD Display   | LCD Display                          | Program output                     | [16x02 LCD](https://seli.tn/product/afficheur-lcd/) |         
 | RTC DS3231         | Real Time Clock                      | Time gathering                     | [DS3231](https://seli.tn/product/module-horloge-temps-reel/) |
  
-## **Development**
+## Development
 
 ### Compiler and tools
 
@@ -36,13 +27,8 @@ For this project, I am using the [cc65](https://cc65.github.io) compiler and Mak
 | cl65               | Linker                               |
 | nvim               | Editor                               |
 
-### Ideas
-
-- Shell
-- Point&Click
-- Platformer
-
-## Architecture and diagram
+## Hradware Diagram
 
 > [!IMPORTANT]  
 > This project is in development. Components and chips aren't bought.
+
