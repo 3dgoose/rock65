@@ -13,7 +13,7 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
 | PCF8574T I2C Module | I2C I/O Expander                    | Simplify peripheral interfacing    | [PCF8574T](https://seli.tn/product/pcf8574t-module-i2c-pour-clavier/) |
 | 16x2 LCD Display   | LCD Display                          | Program output                     | [16x02 LCD](https://seli.tn/product/afficheur-lcd/) |         
 | RTC DS3231         | Real Time Clock                      | Time gathering                     | [DS3231](https://seli.tn/product/module-horloge-temps-reel/) |
-| SD Card Breakout | SD Card reader                    | Store program                      | [254](https://souilah-electronique.tn/modules-et-capteurs/396-module-sd.html) |
+| SD Card Breakout | SD Card reader                    | Store program                      | [SD Module](https://souilah-electronique.tn/modules-et-capteurs/396-module-sd.html) |
  
 ## Toolchain 
 
