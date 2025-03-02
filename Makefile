@@ -1,16 +1,16 @@
-CC = /usr/bin/cc65
-CA = /usr/bin/ca65
-CL = /usr/bin/cl65
+# Toolschain
+CL = cl65
+SIM = sim65 
+
+# Architecture
+ARCH = "sim65c02"
 
 all:
-	$(CC) main.c 
-	$(CA) main.s
-	$(CL) main.o
-
-asm:
-	$(CC) main.c 
+        $(CL) -t $(ARCH) -o firmware.prg src/bootloader.s
+        
+run:
+	$(CL) -t $(ARCH) -o firmware.prg boot.c add.s
+	$(SIM) firmware.prg
 
 clean:
-	rm -f *.o
-	rm -f *.s
-	rm -f main
+        rm -f *.o *.prg
