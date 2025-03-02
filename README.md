@@ -14,6 +14,7 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
 | 16x2 LCD Display   | LCD Display                          | Program output                     | [16x02 LCD](https://seli.tn/product/afficheur-lcd/)                         |         
 | RTC DS3231         | Real Time Clock                      | Time gathering                     | [DS3231](https://seli.tn/product/module-horloge-temps-reel/)                |
 | SD Card Breakout   | SD Card reader                       | Store program                      | [SD Module](https://seli.tn/product/module-de-protection-carte-memoire-sd/) |
+| Color Button       | Button                               | Get user input                     | [Color Button](https://seli.tn/product/module-bouton-poussoir-avec-capot-couleur/) |
  
 ## Toolchain 
 
