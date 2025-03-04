@@ -1,3 +1,3 @@
 *.h linguist-language=C
 Makefile linguist-detectable=false
-Markdown linguist-documentation=false
+*.md linguist-documentation=false
