@@ -1,4 +1,4 @@
-# Toolschain
+# Toolchain
 CL = cl65
 SIM = sim65 
 
@@ -6,11 +6,9 @@ SIM = sim65
 ARCH = "sim65c02"
 
 all:
-        $(CL) -t $(ARCH) -o firmware.prg src/bootloader.s
-        
-run:
-	$(CL) -t $(ARCH) -o firmware.prg boot.c add.s
-	$(SIM) firmware.prg
+        $(CL) -t $(ARCH) -o firmware.prg src/boot.s src/lib.c
 
 clean:
         rm -f *.o *.prg
+
+# To run any program using sim65 : sim65 ./file.prg
