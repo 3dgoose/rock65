@@ -1,2 +1,2 @@
 *.h linguist-language=C
-Makefile linguist-detectable=falsz
+Makefile linguist-detectable=false
