@@ -32,48 +32,39 @@ The [cc65](https://cc65.github.io) toolchain is utilized for this project.
 > This project is currently under development. The components and chips have not been purchased yet.
 
 ```mermaid
-graph TD;
-    subgraph "Microprocessor"
-        W65C02S["W65C02S CPU"]
-    end
+graph LR
+  A[9V Power Supply] --> B[7805 Voltage Regulator]
+  B --> C[5V Power Rail]
+  C --> D[W27C512 EEPROM]
+  C --> E[7400 Logic Gates]
+  C --> F[PCF8574 I2C Module]
+  C --> G[DS3231 RTC Module]
+  C --> H[LCD 16x2 Display]
+  C --> I[Blue LED]
+  C --> J[Button]
+  C --> K[SD Card Protection Module]
 
-    subgraph "Memory"
-        EEPROM["W27C512 EEPROM (64KB)"]
-    end
+  D --> L[Address Bus]
+  D --> M[Data Bus]
+  
+  F --> N[Keypad]
+  
+  H --> O[RS Pin]
+  H --> P[EN Pin]
+  H --> Q[Data Pins]
 
-    subgraph "Clock & Power"
-        Oscillator["4MHz Quartz Oscillator"]
-        Regulator["7805 Voltage Regulator"]
-    end
+  J --> R[Pull-Up Resistor 10KΩ]
 
-    subgraph "Input/Output"
-        Buttons["Button"]
-        LCD["16x2 LCD Display"]
-    end
+  E --> S[Logic Inputs]
+  E --> T[Logic Outputs]
 
-    subgraph "Storage"
-        SDCard["SD Card Breakout"]
-    end
+  I --> U[Current Limiting Resistor 470Ω]
+  I --> V[Ground]
 
-    subgraph "I2C Peripherals"
-        RTC["RTC DS3231"]
-        IOExpander["PCF8574T I2C Expander"]
-    end
-
-    subgraph "Logic & Addressing"
-        NAND74HC00["74HC00 NAND Gate"]
-    end
-
-    %% Connections
-    W65C02S -->|Reads/Writes Data| EEPROM
-    W65C02S -->|Receives Clock Signal| Oscillator
-    W65C02S -->|Receives 5V Power| Regulator
-    W65C02S -->|Controls| IOExpander
-    IOExpander -->|Expands I/O Pins| LCD
-    IOExpander -->|Reads Input| Buttons
-    W65C02S -->|Communicates via SPI| SDCard
-    W65C02S -->|Communicates via I2C| RTC
-    W65C02S -->|Handles Addressing| NAND74HC00
+  G --> W[CLK Pin]
+  G --> X[Data Pin]
+  
+  K --> Y[SD Card]
 
 ```
 
