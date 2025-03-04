@@ -11,22 +11,13 @@
 
 # Precompiled Headers
 *.gch
-*.pch
 
 # Libraries
 *.lib
 *.a
-*.la
-*.lo
 
 # Programs
 *.exe
 *.out
-*.app
-*.i*86
-*.x86_64
 *.hex
 *.prg
-
-# Build
-build

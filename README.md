@@ -1,5 +1,4 @@
 # 65b02
-
 A homebrew breadboard computer based on the [W65C02S](https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf) chip.
 
 ## Summary of Components
@@ -18,7 +17,7 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
  
 ## Toolchain 
 
-The [cc65](https://cc65.github.io) toolchain is used for this project.
+The [cc65](https://cc65.github.io) toolchain is utilized for this project.
 | Tool               | Description                          |
 |--------------------|--------------------------------------|
 | cc65               | C Compiler                           |
@@ -29,4 +28,53 @@ The [cc65](https://cc65.github.io) toolchain is used for this project.
 ## Hardware Diagram
 
 > [!IMPORTANT]  
-> This project is currently in development. The components and chips have not been purchased yet.
+> This project is currently under development. The components and chips have not been purchased yet.
+
+```mermaid
+graph TD;
+    subgraph "Microprocesseur"
+        W65C02S["W65C02S CPU"]
+    end
+    
+    subgraph "Mémoire"
+        EEPROM["W27C512 EEPROM (64KB)"]
+    end
+    
+    subgraph "Horloge & Alimentation"
+        Oscillator["4MHz Quartz Oscillator"]
+        Regulator["7805 Voltage Regulator"]
+    end
+    
+    subgraph "Entrées/Sorties"
+        Buttons["Color Button"]
+        LCD["16x2 LCD Display"]
+    end
+    
+    subgraph "Stockage"
+        SDCard["SD Card Breakout"]
+    end
+
+    subgraph "Périphériques I2C"
+        RTC["RTC DS3231"]
+        IOExpander["PCF8574T I2C Expander"]
+    end
+
+    subgraph "Logique & Adressage"
+        NAND74HC00["74HC00 NAND Gate"]
+    end
+
+    %% Connexions principales
+    W65C02S -->|Data Bus| EEPROM
+    W65C02S -->|Clock| Oscillator
+    W65C02S -->|Power| Regulator
+    W65C02S -->|I/O| IOExpander
+    W65C02S -->|I/O| LCD
+    W65C02S -->|I/O| Buttons
+    W65C02S -->|SPI| SDCard
+    W65C02S -->|I2C| RTC
+    W65C02S -->|Addressing| NAND74HC00
+```
+
+## Software Development
+
+As a developer for this "platform", you can refer to the [Developer Manual](/docs/Developer%20Manual.md), which contains the datasheet, tips, and development options.
