@@ -31,6 +31,7 @@ The [cc65](https://cc65.github.io) toolchain is utilized for this project.
 > [!IMPORTANT]  
 > This project is currently under development. The components and chips have not been purchased yet.
 
+The following is the electric diagram :
 ```mermaid
 graph LR
   A[9V Power Supply] --> B[7805 Voltage Regulator]
