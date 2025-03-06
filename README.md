@@ -14,7 +14,7 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
 | RTC DS3231             | Real Time Clock                      | Time gathering                     | [DS3231](https://seli.tn/product/module-horloge-temps-reel/)                |
 | SD Card Breakout       | SD Card reader                       | Read program                       | [SD Module](https://seli.tn/product/module-de-protection-carte-memoire-sd/) |
 | Button                 |                                      | Get user input                     | [Button](https://seli.tn/product/bouton-tactil-6x6x17mm/)                   |
-| Info LED               | "Witness"                            | System On/Off                      | [Blue LED](https://seli.tn/product/led-5mm-bleu/)                           |
+| Info LED               | Indicator                            | System On/Off                      | [Blue LED](https://seli.tn/product/led-5mm-bleu/)                           |
  
 ## Toolchain 
 
@@ -26,7 +26,7 @@ The [cc65](https://cc65.github.io) toolchain is utilized for this project.
 | cl65                  | Linker                               |
 | sim65                 | Emulator                             |
 
-## Hardware Diagram
+## Hardware
 
 > [!IMPORTANT]  
 > This project is currently under development. The components and chips have not been purchased yet.
