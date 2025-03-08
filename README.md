@@ -2,8 +2,7 @@
 A homebrew breadboard computer based on the [W65C02S](https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf) chip.
 
 ## Summary of Components
-| Component              | Description                          | Use in Project                     | Link                                                                        |
-|------------------------|--------------------------------------|------------------------------------|-----------------------------------------------------------------------------|
+| Component              | Description                          | Use in Project                     | Link                               |------------------------|--------------------------------------|------------------------------------|------------------------------------
 | W27C512 EEPROM         | 512K-bit EEPROM (64KB)               | Store firmware                     | [W27C512](https://seli.tn/product/w27c512-ci-eeprom-512k-bit-45ns-dip28/)   |
 | 7805 Regulator         | 5V Voltage Regulator                 | Power supply                       | [7805](https://seli.tn/product/regulateur-de-tension-7805/)                 |
 | 4MHz Quartz Oscillator | 4 Mhz Crystal Oscillator             | Clock signal for 65C02             | [4Mhz Oscillator](https://seli.tn/product/oscillateur-quartz-4mhz/)         |
@@ -14,6 +13,8 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
 | SD Card Breakout       | SD Card reader                       | Read program                       | [SD Module](https://seli.tn/product/module-de-protection-carte-memoire-sd/) |
 | Button                 |                                      | Get user input                     | [Button](https://seli.tn/product/bouton-tactil-6x6x17mm/)                   |
 | Info LED               | Indicator                            | System On/Off                      | [Blue LED](https://seli.tn/product/led-5mm-bleu/)                           |
+| 10kOHM Resistor        | Resistance                           | Pull Up/Downs                      | [10kOHM Resistance](https://seli.tn/product/jeu-de-10-resistances-1-4w-4/?attribute_valeur=10KOHM)
+| 220 Ohm Resistor       | LED Resistance                       | Limit LED 
  
 ## Hardware
 > [!IMPORTANT]  
