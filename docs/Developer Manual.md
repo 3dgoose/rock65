@@ -83,7 +83,6 @@ resn:  .res 1
 Refer to [Assembly VS C](/examples/Assembly%20VS%20C/) for a comparison between a simple adder implemented in C and its assembly compiler output.
 
 ### Software development
-The following sections will describe software development on this platform.
 
 #### Preferred language
 The recommended programming language for the 65b02 is Assembly, given its execution speed and compact binary size. However, an external C API is also available, providing functions to control the LCD, read from the SD card and interface with the RTC. This API is cross-language and can be used with both C and Assembly.

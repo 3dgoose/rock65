@@ -2,7 +2,6 @@
 A homebrew breadboard computer based on the [W65C02S](https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf) chip.
 
 ## Summary of Components
-
 | Component              | Description                          | Use in Project                     | Link                                                                        |
 |------------------------|--------------------------------------|------------------------------------|-----------------------------------------------------------------------------|
 | W27C512 EEPROM         | 512K-bit EEPROM (64KB)               | Store firmware                     | [W27C512](https://seli.tn/product/w27c512-ci-eeprom-512k-bit-45ns-dip28/)   |
@@ -17,48 +16,57 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
 | Info LED               | Indicator                            | System On/Off                      | [Blue LED](https://seli.tn/product/led-5mm-bleu/)                           |
  
 ## Hardware
-
 > [!IMPORTANT]  
 > This project is currently under development. The components and chips have not been purchased yet.
 
 The following is the electric diagram :
 ```mermaid
-graph LR
-  A[9V Power Supply] --> B[7805 Voltage Regulator]
-  B --> C[5V Power Rail]
-  C --> D[W27C512 EEPROM]
-  C --> E[7400 Logic Gates]
-  C --> F[PCF8574 I2C Module]
-  C --> G[DS3231 RTC Module]
-  C --> H[LCD 16x2 Display]
-  C --> I[Blue LED]
-  C --> J[Button]
-  C --> K[SD Card Protection Module]
+graph TD;
+    A[Alimentation] -->|9V - 12V| B[LM317 / 7805]
+    B -->|5V Régulé| C[Alim. Bus]
+    
+    C -->|5V| D[W65C02S CPU]
+    C -->|5V| E[W27C512 EEPROM]
+    C -->|5V| F[PCF8574T I2C Expander]
+    C -->|5V| G[DS3231 RTC]
+    C -->|5V| H[128x64 LCD]
+    C -->|5V| I[SD Card Module]
+    C -->|5V| J[74HC00 NAND Gate]
+    C -->|5V| K[Buttons]
+    C -->|5V| L[LEDs]
+    
+    D -->|Addr/Data Bus| E
+    D -->|I2C| F
+    F -->|I2C| G
+    F -->|I2C| H
+    F -->|I2C| I
+    
+    E -->|Firmware Storage| D
+    I -->|Program Read| D
 
-  D --> L[Address Bus]
-  D --> M[Data Bus]
-  
-  F --> N[Keypad]
-  
-  H --> O[RS Pin]
-  H --> P[EN Pin]
-  H --> Q[Data Pins]
-
-  J --> R[Pull-Up Resistor 10KΩ]
-
-  E --> S[Logic Inputs]
-  E --> T[Logic Outputs]
-
-  I --> U[Current Limiting Resistor 470Ω]
-  I --> V[Ground]
-
-  G --> W[CLK Pin]
-  G --> X[Data Pin]
-  
-  K --> Y[SD Card]
+    subgraph Power Regulation
+        B
+    end
+    
+    subgraph Processing
+        D
+    end
+    
+    subgraph Storage
+        E
+        I
+    end
+    
+    subgraph Peripherals
+        F
+        G
+        H
+        J
+        K
+        L
+    end
 
 ```
 
-## Software Development
-
+## Manual
 Refer to the [Developer Manual](/docs/Developer%20Manual.md) for information, including the datasheet, development guidelines and additional tips.
