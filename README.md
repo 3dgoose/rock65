@@ -19,6 +19,7 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
 | 10 µF capacitor        | Electrolyte Capacitor                | Filter Alim.                       | [10 UF Capacitor](https://seli.tn/product/condensateur-radial-chimique-10uf/?attribute_tension=16V) |
 | M/M Jumper Wire        |                                      |                                    | [10 Jumper Wires](https://seli.tn/product/jeu-de-10-fils-de-connexion-m-m-20cm-pour-arduino/)       |
 | M/F Jumper Wire        |                                      |                                    | [10 Jumper Wires](https://seli.tn/product/jeu-de-10-fils-de-connexion-m-f-20cm-pour-arduino/)       |
+| 9V Battery Connector   | Battery Connector                    | Connect Battery to system          | [9V Battery Connector](https://seli.tn/product/cordon-pile-9v/)                                 |
  
 ## Hardware
 > [!IMPORTANT]  
