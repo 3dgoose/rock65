@@ -27,7 +27,7 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
 > [!IMPORTANT]  
 > This project is currently under development. The components and chips have not been purchased yet.
 
-The following is the electric diagram :
+This is the electric diagram :
 ```mermaid
 graph TD;
     A[Alimentation] -->|9V - 12V| B[LM317 / 7805]

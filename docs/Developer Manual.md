@@ -88,7 +88,7 @@ Refer to [Assembly VS C](/examples/Assembly%20VS%20C/) for a comparison between 
 The recommended programming language for the 65b02 is Assembly, given its execution speed and compact binary size. However, an external C API is also available, providing functions to control the LCD, read from the SD card and interface with the RTC. This API is cross-language and can be used with both C and Assembly.
 
 #### Debugging
-If the fifth button is pressed, the system will launch the built-in debugger `dbg65`. This debugger is a Hex editor that allows direct memory modification, dump viewing and supports basic breakpoints.
+If the fifth button is pressed, the system will launch the built-in debugger `dbg65`. This debugger is a Hex viewer that allows memory and dump viewing.
 
 #### Environment
 The environment is a collection of three tools: the [cc65 toolchain](https://cc65.github.io), an editor of your choice, and an optional make utility.

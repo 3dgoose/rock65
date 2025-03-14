@@ -1,6 +1,5 @@
 ## Firmware
-
-This computer's firmware is divided in two parts : the **bootloader** (seb) and the "standard"  **library** that contains basic routines (`#include lib`).
+This computer's firmware is divided in two parts : the **bootloader** and the **library** that contains basic routines (`#include lib65b02`).
 
 ### boot.s
 
@@ -12,5 +11,5 @@ This computer's firmware is divided in two parts : the **bootloader** (seb) and 
 ### lib.c
 
 - SD Module read function
-- LCD Screen display routine
+- LCD Screen display function
 - RTC time gathering function
