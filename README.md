@@ -5,8 +5,8 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
 | Component              | Description                          | Link                               
 |------------------------|--------------------------------------|---------------------------------------------------------------------------------------------|
 | W65C02S                | Processor                            | [Mouser.ca](https://www.mouser.ca/ProductDetail/Western-Design-Center-WDC/W65C02S6TPG-14?qs=opBjA1TV903lvWo9AEKH5w%3D%3D)                                                                                                                              |
-| 24FC1026 EEPROM        | 125 Kbyte EEPROM                     | [Mouser.ca](https://www.mouser.ca/ProductDetail/579-24FC1026-I-P)                           |
-| 23LCV1024              | 125 Kbyte SRAM                       | [Mouser.ca](https://www.mouser.ca/ProductDetail/579-23LCV1024-I-P)                          |
+| 24FC1026 EEPROM        | 125 Kb EEPROM                     | [Mouser.ca](https://www.mouser.ca/ProductDetail/579-24FC1026-I-P)                           |
+| 23LCV1024              | 125 Kb SRAM                       | [Mouser.ca](https://www.mouser.ca/ProductDetail/579-23LCV1024-I-P)                          |
 | 7805 Regulator         | 5V Voltage Regulator                 | [Seli.tn](https://seli.tn/product/regulateur-de-tension-7805/)                              |
 | 4MHz Quartz Oscillator | 4 Mhz Crystal Oscillator             | [Seli.tn](https://seli.tn/product/oscillateur-quartz-4mhz/)                                 |
 | 74HC00 NAND Gate       | Quad 2-input NAND gate               | [Seli.tn](https://seli.tn/product/7400-ci-4-portes-logiques-non-et/)                        |
