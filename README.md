@@ -13,7 +13,6 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
 | PCF8574T I2C Module    | I2C I/O Expander                     | [Seli.tn](https://seli.tn/product/pcf8574t-module-i2c-pour-clavier/)                        |
 | 16x2 LCD Display       | LCD Display                          | [Seli.tn](https://seli.tn/product/afficheur-lcd-128x64-points-5v-avec-retroeclairage-port-parallele-st/) |    
 | RTC DS3231             | Real Time Clock                      | [Seli.tn](https://seli.tn/product/module-horloge-temps-reel/)                               |
-| SD Card Breakout       | SD Card reader                       | [Seli.tn](https://seli.tn/product/module-de-protection-carte-memoire-sd/)                   |
 | Button                 |                                      | [Seli.tn](https://seli.tn/product/bouton-tactil-6x6x17mm/)                                  |
 | Info LED               | Indicator                            | [Seli.tn](https://seli.tn/product/led-5mm-bleu/)                                            |
 | 10kOHM Resistor        | Resistance                           | [Seli.tn](https://seli.tn/product/jeu-de-10-resistances-1-4w-4/?attribute_valeur=10KOHM)    |
