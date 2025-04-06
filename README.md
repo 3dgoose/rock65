@@ -1,5 +1,5 @@
-# 65b02
-A homebrew breadboard computer based on the [W65C02S](https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf) chip alongside a freeware library and bootloader.
+# rock65
+A homebrew breadboard computer based on the [W65C02S](https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf) chip alongside a freeware library.
 
 ## Summary of Components
 | Component              | Description                          | Link                               
