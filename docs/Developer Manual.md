@@ -2,7 +2,7 @@
 This developer manual includes code examples, hardware details, and guidelines to your contribution to the project.
 
 ### Hardware
-This breadboard computer features three blue LEDs: one system On/Off indicator and two for the programmer's use. It also includes five buttons, one for debugger, a 168x64 character LCD screen and a Real-Time Clock module.
+This breadboard computer features three blue LEDs: one system On/Off indicator and two for the programmer's use. It also includes five buttons, a 168x64 character LCD screen and a Real-Time Clock module.
 
 ### Examples
 1. The classic Hello World in C:
@@ -19,7 +19,7 @@ int main(void) {
 //   sim65 hello.prg
 ```
 
-2. A simple adder (from scratch) that prints the output :
+2. A simple adder that prints the output :
 ```assembly
 ; Header
 
@@ -85,16 +85,13 @@ Refer to [Assembly VS C](/examples/Assembly%20VS%20C/) for a comparison between 
 ### Software development
 
 #### Preferred language
-The recommended programming language for the 65b02 is Assembly, given its execution speed and compact binary size. However, an external C API is also available, providing functions to control the LCD, read from the SD card and interface with the RTC. This API is cross-language and can be used with both C and Assembly.
-
-#### Debugging
-If the fifth button is pressed, the system will launch the built-in debugger `dbg65`. This debugger is a Hex viewer that allows memory and dump viewing.
+The recommended programming language for the rock65 is Assembly, given its execution speed and compact binary size. However, C is compatible with the library and device.
 
 #### Environment
 The environment is a collection of three tools: the [cc65 toolchain](https://cc65.github.io), an editor of your choice, and an optional make utility.
 
 cc65 includes the compiler (cc65), assembler (ca65), linker (ld65) and simulator (sim65).
 
-Any editor can be used, from `vim` to Eclipse. I use [VS Code](https://code.visualstudio.com) with the [Alchemy65](https://marketplace.visualstudio.com/items?itemName=alchemic-raker.alchemy65).
+Any editor can be used, from `vi` to Eclipse. I use Neovim.
 
 The GNU Make utility is also used but optional to compile the project.
