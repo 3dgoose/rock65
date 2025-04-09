@@ -11,7 +11,7 @@ A homebrew breadboard computer based on the [W65C02S](https://www.westerndesignc
 | 4MHz Quartz Oscillator | 4 Mhz Crystal Oscillator             | [Seli.tn](https://seli.tn/product/oscillateur-quartz-4mhz/)                                 |
 | 74HC00 NAND Gate       | Quad 2-input NAND gate               | [Seli.tn](https://seli.tn/product/7400-ci-4-portes-logiques-non-et/)                        |
 | PCF8574T I2C Module    | I2C I/O Expander                     | [Seli.tn](https://seli.tn/product/pcf8574t-module-i2c-pour-clavier/)                        |
-| 16x2 LCD Display       | LCD Display                          | [Seli.tn](https://seli.tn/product/afficheur-lcd-128x64-points-5v-avec-retroeclairage-port-parallele-st/) |    
+| 128x64 LCD Display       | LCD Display                          | [Seli.tn](https://seli.tn/product/afficheur-lcd-128x64-points-5v-avec-retroeclairage-port-parallele-st/) |    
 | RTC DS3231             | Real Time Clock                      | [Seli.tn](https://seli.tn/product/module-horloge-temps-reel/)                               |
 | Button                 |                                      | [Seli.tn](https://seli.tn/product/bouton-tactil-6x6x17mm/)                                  |
 | Info LED               | Indicator                            | [Seli.tn](https://seli.tn/product/led-5mm-bleu/)                                            |
