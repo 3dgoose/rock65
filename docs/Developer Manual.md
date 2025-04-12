@@ -1,25 +1,25 @@
 ## Developer Manual
 This developer manual includes code examples, hardware details, and guidelines to your contribution to the project.
 
-### Hardware
-This breadboard computer features three blue LEDs: one system On/Off indicator and two for the programmer's use. It also includes five buttons, a 168x64 character LCD screen and a Real-Time Clock module.
+### 1. Hardware
+This machine features a 128x64 LCD screen, five buttons, 2 LEDs and 125 bytes of SRAM and storage (EEPROM).
 
-### Examples
-1. The classic Hello World in C:
-```c
-#include <stdio.h>
+### 2. Software development
 
-int main(void) {
-        printf("Hello!\n");
-        return 5;
-}
+#### 2.1 Environment
+The environment is a collection of three tools: the [cc65 toolchain](https://cc65.github.io), an editor of your choice, and an optional make utility.
 
-// Build and run:
-//   cl65 -t sim65c02 -o hello.prg hello.c
-//   sim65 hello.prg
-```
+cc65 includes the compiler (cc65), assembler (ca65), linker (ld65) and simulator (sim65).
 
-2. A simple adder that prints the output :
+Any editor can be used, from `vi` to Eclipse. I use Neovim.
+
+The GNU Make utility is also used but optional to compile the project.
+
+#### 2.2 Program optimization
+Programs targeting this device should be highly optimized. The preferred language is Assembly due to it's compact binary size and execution speed.
+
+#### 2.3 Examples
+A simple adder that prints the output :
 ```assembly
 ; Header
 
@@ -81,17 +81,3 @@ resn:  .res 1
 ```
 
 Refer to [Assembly VS C](/examples/Assembly%20VS%20C/) for a comparison between a simple adder implemented in C and its assembly compiler output.
-
-### Software development
-
-#### Preferred language
-The recommended programming language for the rock65 is Assembly, given its execution speed and compact binary size. However, C is compatible with the library and device.
-
-#### Environment
-The environment is a collection of three tools: the [cc65 toolchain](https://cc65.github.io), an editor of your choice, and an optional make utility.
-
-cc65 includes the compiler (cc65), assembler (ca65), linker (ld65) and simulator (sim65).
-
-Any editor can be used, from `vi` to Eclipse. I use Neovim.
-
-The GNU Make utility is also used but optional to compile the project.
