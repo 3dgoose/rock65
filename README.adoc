@@ -33,56 +33,6 @@ A homebrew breadboard computer based on the https://www.westerndesigncenter.com/
 This project is currently under development. The components and chips have not been purchased yet.
 ====
 
-This is the electric diagram:
-
-[source,mermaid]
-----
-graph TD;
-    A[Alimentation] -->|9V - 12V| B[LM317 / 7805]
-    B -->|5V Régulé| C[Alim. Bus]
-    
-    C -->|5V| D[W65C02S CPU]
-    C -->|5V| E[W27C512 EEPROM]
-    C -->|5V| F[PCF8574T I2C Expander]
-    C -->|5V| G[DS3231 RTC]
-    C -->|5V| H[128x64 LCD]
-    C -->|5V| I[SD Card Module]
-    C -->|5V| J[74HC00 NAND Gate]
-    C -->|5V| K[Buttons]
-    C -->|5V| L[LEDs]
-    
-    D -->|Addr/Data Bus| E
-    D -->|I2C| F
-    F -->|I2C| G
-    F -->|I2C| H
-    F -->|I2C| I
-    
-    E -->|Firmware Storage| D
-    I -->|Program Read| D
-
-    subgraph Power Regulation
-        B
-    end
-    
-    subgraph Processing
-        D
-    end
-    
-    subgraph Storage
-        E
-        I
-    end
-    
-    subgraph Peripherals
-        F
-        G
-        H
-        J
-        K
-        L
-    end
-----
-
 == Manual
 
-Refer to the https://gitlab.com/ton-utilisateur/rock65/-/blob/main/docs/Developer%20Manual.adoc[Developer Manual] for information, including the datasheet, development guidelines and additional tips.
+Refer to the https://gitlab.com/3dgoose/rock65/-/blob/main/docs/Developer%20Manual.adoc[Developer Manual] for information, including the datasheet, development guidelines and additional tips.
