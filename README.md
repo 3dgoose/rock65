@@ -1,33 +1,42 @@
-# rock65
-A homebrew breadboard computer based on the [W65C02S](https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf) chip alongside a freeware library.
+= rock65
+A homebrew breadboard computer based on the https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf[W65C02S] chip alongside a freeware library.
 
-## Summary of Components
-| Component              | Description                          | Link                               
-|------------------------|--------------------------------------|---------------------------------------------------------------------------------------------|
-| W65C02S                | Processor                            | [Mouser.ca](https://www.mouser.ca/ProductDetail/Western-Design-Center-WDC/W65C02S6TPG-14?qs=opBjA1TV903lvWo9AEKH5w%3D%3D)                                                                                                                              |
-| 24FC1026 EEPROM        | 125 Kb EEPROM                     | [Mouser.ca](https://www.mouser.ca/ProductDetail/579-24FC1026-I-P)                           |
-| 23LCV1024              | 125 Kb SRAM                       | [Mouser.ca](https://www.mouser.ca/ProductDetail/579-23LCV1024-I-P)                          |
-| 7805 Regulator         | 5V Voltage Regulator                 | [Seli.tn](https://seli.tn/product/regulateur-de-tension-7805/)                              |
-| 4MHz Quartz Oscillator | 4 Mhz Crystal Oscillator             | [Seli.tn](https://seli.tn/product/oscillateur-quartz-4mhz/)                                 |
-| 74HC00 NAND Gate       | Quad 2-input NAND gate               | [Seli.tn](https://seli.tn/product/7400-ci-4-portes-logiques-non-et/)                        |
-| PCF8574T I2C Module    | I2C I/O Expander                     | [Seli.tn](https://seli.tn/product/pcf8574t-module-i2c-pour-clavier/)                        |
-| 128x64 LCD Display       | LCD Display                          | [Seli.tn](https://seli.tn/product/afficheur-lcd-128x64-points-5v-avec-retroeclairage-port-parallele-st/) |    
-| RTC DS3231             | Real Time Clock                      | [Seli.tn](https://seli.tn/product/module-horloge-temps-reel/)                               |
-| Button                 |                                      | [Seli.tn](https://seli.tn/product/bouton-tactil-6x6x17mm/)                                  |
-| Info LED               | Indicator                            | [Seli.tn](https://seli.tn/product/led-5mm-bleu/)                                            |
-| 10kOHM Resistor        | Resistance                           | [Seli.tn](https://seli.tn/product/jeu-de-10-resistances-1-4w-4/?attribute_valeur=10KOHM)    |
-| 220 Ohm Resistor       | LED Resistance                       | [Seli.tn](https://seli.tn/product/jeu-de-10-resistances-1-4w-7/?attribute_valeur=220OHM)    |
-| 10 µF capacitor        | Electrolyte Capacitor                | [Seli.tn](https://seli.tn/product/condensateur-radial-chimique-10uf/?attribute_tension=16V) |
-| M/M Jumper Wire        |                                      | [Seli.tn](https://seli.tn/product/jeu-de-10-fils-de-connexion-m-m-20cm-pour-arduino/)       |
-| M/F Jumper Wire        |                                      | [Seli.tn](https://seli.tn/product/jeu-de-10-fils-de-connexion-m-f-20cm-pour-arduino/)       |
-| 9V Battery Connector   | Battery Connector                    | [Seli.tn](https://seli.tn/product/cordon-pile-9v/)                                          |
- 
-## Hardware
-> [!IMPORTANT]  
-> This project is currently under development. The components and chips have not been purchased yet.
+== Summary of Components
 
-This is the electric diagram :
-```mermaid
+[options="header", cols="1,2,1"]
+|===
+| Component              | Description                          | Link
+
+| W65C02S               | Processor                            | https://www.mouser.ca/ProductDetail/Western-Design-Center-WDC/W65C02S6TPG-14?qs=opBjA1TV903lvWo9AEKH5w%3D%3D[W65C02S @ Mouser.ca]
+| 24FC1026 EEPROM       | 125 Kb EEPROM                        | https://www.mouser.ca/ProductDetail/579-24FC1026-I-P[24FC1026 @ Mouser.ca]
+| 23LCV1024             | 125 Kb SRAM                          | https://www.mouser.ca/ProductDetail/579-23LCV1024-I-P[23LCV1024 @ Mouser.ca]
+| 7805 Regulator        | 5V Voltage Regulator                 | https://seli.tn/product/regulateur-de-tension-7805/[Seli.tn]
+| 4MHz Quartz Oscillator| 4 MHz Crystal Oscillator             | https://seli.tn/product/oscillateur-quartz-4mhz/[Seli.tn]
+| 74HC00 NAND Gate      | Quad 2-input NAND gate               | https://seli.tn/product/7400-ci-4-portes-logiques-non-et/[Seli.tn]
+| PCF8574T I2C Module   | I2C I/O Expander                     | https://seli.tn/product/pcf8574t-module-i2c-pour-clavier/[Seli.tn]
+| 128x64 LCD Display    | LCD Display                          | https://seli.tn/product/afficheur-lcd-128x64-points-5v-avec-retroeclairage-port-parallele-st/[Seli.tn]
+| RTC DS3231            | Real Time Clock                      | https://seli.tn/product/module-horloge-temps-reel/[Seli.tn]
+| Button                |                                      | https://seli.tn/product/bouton-tactil-6x6x17mm/[Seli.tn]
+| Info LED              | Indicator                            | https://seli.tn/product/led-5mm-bleu/[Seli.tn]
+| 10kOHM Resistor       | Resistance                           | https://seli.tn/product/jeu-de-10-resistances-1-4w-4/?attribute_valeur=10KOHM[Seli.tn]
+| 220 Ohm Resistor      | LED Resistance                       | https://seli.tn/product/jeu-de-10-resistances-1-4w-7/?attribute_valeur=220OHM[Seli.tn]
+| 10 µF Capacitor       | Electrolyte Capacitor                | https://seli.tn/product/condensateur-radial-chimique-10uf/?attribute_tension=16V[Seli.tn]
+| M/M Jumper Wire       |                                      | https://seli.tn/product/jeu-de-10-fils-de-connexion-m-m-20cm-pour-arduino/[Seli.tn]
+| M/F Jumper Wire       |                                      | https://seli.tn/product/jeu-de-10-fils-de-connexion-m-f-20cm-pour-arduino/[Seli.tn]
+| 9V Battery Connector  | Battery Connector                    | https://seli.tn/product/cordon-pile-9v/[Seli.tn]
+|===
+
+== Hardware
+
+[IMPORTANT]
+====
+This project is currently under development. The components and chips have not been purchased yet.
+====
+
+This is the electric diagram:
+
+[source,mermaid]
+----
 graph TD;
     A[Alimentation] -->|9V - 12V| B[LM317 / 7805]
     B -->|5V Régulé| C[Alim. Bus]
@@ -72,8 +81,8 @@ graph TD;
         K
         L
     end
+----
 
-```
+== Manual
 
-## Manual
-Refer to the [Developer Manual](/docs/Developer%20Manual.md) for information, including the datasheet, development guidelines and additional tips.
+Refer to the https://gitlab.com/ton-utilisateur/rock65/-/blob/main/docs/Developer%20Manual.adoc[Developer Manual] for information, including the datasheet, development guidelines and additional tips.
