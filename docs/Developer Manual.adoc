@@ -21,6 +21,7 @@ Programs targeting this device should be highly optimized. The preferred languag
 ==== 2.3 Examples
 A simple adder that prints the output :
 [source,assembly]
+----
 ; Header
 
 .setcpu     "65C02"
@@ -78,6 +79,6 @@ resn:  .res 1
 ; sim65 adder.prg
 ; Expected output:
 ; The result is: 64
-```
+----
 
 Refer to [Assembly VS C](/examples/Assembly%20VS%20C/) for a comparison between a simple adder implemented in C and its assembly compiler output.
