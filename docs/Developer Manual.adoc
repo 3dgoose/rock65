@@ -1,12 +1,12 @@
-## Developer Manual
+== Developer Manual
 This developer manual includes code examples, hardware details, and guidelines to your contribution to the project.
 
-### 1. Hardware
+=== 1. Hardware
 This machine features a 128x64 LCD screen, five buttons, 2 LEDs and 125 bytes of SRAM and storage (EEPROM).
 
-### 2. Software development
+=== 2. Software development
 
-#### 2.1 Environment
+==== 2.1 Environment
 The environment is a collection of three tools: the [cc65 toolchain](https://cc65.github.io), an editor of your choice, and an optional make utility.
 
 cc65 includes the compiler (cc65), assembler (ca65), linker (ld65) and simulator (sim65).
@@ -15,12 +15,12 @@ Any editor can be used, from `vi` to Eclipse. I use Neovim.
 
 The GNU Make utility is also used but optional to compile the project.
 
-#### 2.2 Program optimization
+==== 2.2 Program optimization
 Programs targeting this device should be highly optimized. The preferred language is Assembly due to it's compact binary size and execution speed.
 
-#### 2.3 Examples
+==== 2.3 Examples
 A simple adder that prints the output :
-```assembly
+[source,assembly]
 ; Header
 
 .setcpu     "65C02"
