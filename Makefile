@@ -15,7 +15,7 @@ all: hello.prg adder.prg
 
 # Build example programs
 hello.prg: examples/hello.c
-	$(CL) -t $(ARCH) -o hello.prg examples/hello.c lib65b02.a
+	$(CL) -t $(ARCH) -o hello.prg examples/hello.c
 
 adder.prg: examples/adder.asm
 	$(CL) -t $(ARCH) -o adder.prg examples/adder.asm

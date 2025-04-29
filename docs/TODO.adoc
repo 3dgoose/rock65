@@ -1,4 +1,9 @@
 == lib.s
 
--  [ ] LCD Screen display function
--  [ ] RTC time gathering function
+- [ ] LCD Screen display function
+- [ ] RTC time gathering function
+- [ ] Beeper function
+
+== General
+
+- [ ] Add rock65.cfg for ld65
