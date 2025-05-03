@@ -3,8 +3,8 @@
 # Linguist overrides
 Makefile linguist-detectable=false
 
-*.md linguist-vendored=false
-*.md linguist-generated=false
-*.md linguist-documentation=false
-*.md linguist-detectable=true
+*.adoc linguist-vendored=false
+*.adoc linguist-generated=false
+*.adoc linguist-documentation=false
+*.adoc linguist-detectable=true
 README.md linguist-detectable=true
