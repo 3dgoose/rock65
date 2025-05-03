@@ -1,10 +1,16 @@
+# Assigner le langage C aux fichiers d'en-tête
 *.h linguist-language=C
 
-# Linguist overrides
+# Faire en sorte que Makefile soit traité comme du texte brut
 Makefile linguist-language=plaintext
 
+# Spécifier que les fichiers .adoc ne sont pas considérés comme des fichiers générés ou de documentation
 *.adoc linguist-vendored=false
 *.adoc linguist-generated=false
 *.adoc linguist-documentation=false
+
+# Rendre les fichiers .adoc détectables (par exemple, pour un usage spécifique)
 *.adoc linguist-detectable=true
-README.md linguist-detectable=true
+
+# Assurer que README.md est détecté comme fichier de documentation
+README.adoc linguist-detectable=true
