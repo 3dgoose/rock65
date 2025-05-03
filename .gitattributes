@@ -2,6 +2,7 @@
 
 # Linguist overrides
 Makefile linguist-detectable=false
+Makefile linguist-vendredi=true
 
 *.adoc linguist-vendored=false
 *.adoc linguist-generated=false
