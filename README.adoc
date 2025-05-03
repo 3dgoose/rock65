@@ -26,6 +26,7 @@ A homebrew breadboard computer based on the https://www.westerndesigncenter.com/
 | 9V Battery Connector  | Battery Connector                    | https://seli.tn/product/cordon-pile-9v/[Seli.tn]
 | KY-012 Buzzer         | Buzzer                               | https://seli.tn/product/ky-012-module-buzzer-actif-3-5-5-5v/[Seli.tn] 
 | FT232RL FTDI          | Connect PC                           | https://seli.tn/product/ft232rl-adaptateur-usb-rs232/[Seli.tn]
+| 1kOHM Resistor        | FTDI                                 | https://seli.tn/product/jeu-de-10-resistances-1-4w/[Seli.tn]
 |===
 
 == Hardware
