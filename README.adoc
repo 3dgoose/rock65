@@ -18,7 +18,6 @@ A homebrew breadboard computer based on the https://www.westerndesigncenter.com/
 | RTC DS3231            | Real Time Clock                      | https://seli.tn/product/module-horloge-temps-reel/[Seli.tn]
 | Button                |                                      | https://seli.tn/product/bouton-tactil-6x6x17mm/[Seli.tn]
 | Info LED              | Indicator                            | https://seli.tn/product/led-5mm-bleu/[Seli.tn]
-| 4.7kOHM Resistor      | Pull-up for Pico                     | https://seli.tn/product/jeu-de-10-resistances-1-4w-9/[Seli.tn]
 | 10kOHM Resistor       | Resistance                           | https://seli.tn/product/jeu-de-10-resistances-1-4w-4/?attribute_valeur=10KOHM[Seli.tn]
 | 220 OHM Resistor      | LED Resistance                       | https://seli.tn/product/jeu-de-10-resistances-1-4w-7/?attribute_valeur=220OHM[Seli.tn]
 | 10 µF Capacitor       | Electrolyte Capacitor                | https://seli.tn/product/condensateur-radial-chimique-10uf/?attribute_tension=16V[Seli.tn]
