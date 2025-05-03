@@ -1,8 +1,7 @@
 *.h linguist-language=C
 
 # Linguist overrides
-Makefile linguist-detectable=false
-Makefile linguist-vendredi=true
+Makefile linguist-language=plaintext
 
 *.adoc linguist-vendored=false
 *.adoc linguist-generated=false
