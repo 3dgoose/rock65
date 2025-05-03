@@ -1,5 +1,4 @@
 *.h linguist-language=C
-*.asm linguist-language=Assembly
 
 # Makefile non-detectable
 Makefile linguist-language=plaintext
