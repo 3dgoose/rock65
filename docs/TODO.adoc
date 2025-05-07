@@ -1,8 +1,8 @@
 == lib.s
 
-- [ ] LCD Screen display function
-- [ ] RTC time gathering function
-- [ ] Beeper function
+- [ ] LCD Screen display
+- [ ] RTC time gathering
+- [ ] Buzzer
 
 == General
 

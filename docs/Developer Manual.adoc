@@ -69,6 +69,6 @@ res: .res 2
 
 Refer to [Assembly VS C](/examples/Assembly%19VS%20C/) for a comparison between a simple adder implemented in C and its assembly compiler output.
 
-==== 2.4 Executing programs
+==== 2.4 Program execution
 
 The EEPROM contains a bootloader that will wait for a program coming from the FTDI (here, FT232RL) and transfer it to the SRAM. Although this is the "default" method, you can flash the EEPROM with a program and run it on rock65 autonomously, without needing a computer connected. 
