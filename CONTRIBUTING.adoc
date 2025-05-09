@@ -1,0 +1,59 @@
+= Contributing Guide
+
+We welcome contributions of all kinds, but for major changes, please follow the process below to ensure smooth collaboration and discussion.
+
+== Getting Started
+
+. Fork the repository.
+. Follow the code style and guidelines used in the project.
+. Submit a pull request (PR) when you're ready.
+
+== Reporting Issues
+
+If you encounter bugs, unexpected behavior, or have a suggestion:
+
+. Check if the issue already exists in the tracker.
+. If not, open a new issue and describe it clearly:
+- What did you expect to happen?
+- What happened instead?
+- Steps to reproduce.
+- Environment (OS, version, etc.).
+
+Clear, concise issues help us act faster.
+
+== Proposing Major Changes (RFCs)
+
+For large or breaking changes, **submit a Request for Comments (RFC)** before working on a PR.
+
+=== When to Submit an RFC
+
+- You're introducing a new feature.
+- You're changing a core design or architecture.
+- You're removing or deprecating functionality.
+- Your change affects many users or other parts of the project.
+
+=== How to Submit
+
+. Open an issue titled `[RFC] Your proposal title`.
+. Include:
+- Motivation and background.
+- Description of the proposed change.
+- Alternatives considered.
+. Tag the issue with `rfc` and wait for community feedback.
+
+Once accepted, you may proceed with a PR referencing the RFC issue.
+
+== Pull Requests
+
+. Keep PRs focused and small. If needed, split large changes into multiple PRs.
+. Reference the related issue or RFC.
+. Add tests and documentation if applicable.
+. Be ready for review and feedback.
+
+== Code of Conduct
+
+Please be respectful and constructive. Disagreements are okay — hostility is not. 
+
+== 🙏 Thanks
+
+Your time and effort mean a lot to us. Happy hacking!
