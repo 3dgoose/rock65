@@ -1,6 +1,8 @@
 = rock65
 
 :icons: font
+:author: 3dgoose
+:toc:
 
 A homebrew breadboard computer based on the https://www.westerndesigncenter.com/wdc/documentation/w65c02s.pdf[W65C02S] chip alongside a freeware library.
 
