@@ -7,7 +7,7 @@ This machine features a 128x64 LCD screen, five buttons, 3 LEDs and 125 bytes of
 === 2. Software development
 
 ==== 2.1 Environment
-The environment is a collection of three tools: the [cc65 toolchain](https://cc65.github.io), an editor of your choice, and an optional make utility.
+The environment is a collection of four tools: the https://cc65.github.io[cc65 toolchain], https://gitlab.com/3dgoose/librock[the official SDK (librock)], an editor of your choice, and an optional make utility.
 
 cc65 includes the compiler (cc65), assembler (ca65), linker (ld65), archiver (ar65) and simulator (sim65).
 
@@ -16,7 +16,7 @@ Any editor can be used, from `vi` to Eclipse. I use Vim.
 The GNU Make is optional but recommeneded.
 
 ==== 2.2 Program optimization
-Programs targeting this device should be highly optimized. The preferred language is Assembly due to it's compact binary size and execution speed.
+Programs targeting this device should be optimized. The preferred language is 65(c)02 Assembly due to it's compact binary size and execution speed.
 
 ==== 2.3 Examples
 A simple adder that prints the output :
@@ -67,8 +67,9 @@ res: .res 2
 .endproc
 ----
 
-Refer to [Assembly VS C](/examples/Assembly%19VS%20C/) for a comparison between a simple adder implemented in C and its assembly compiler output.
+==== 2.4 librock
+`librock` is the official SDK for the rock65. It contains subroutines for mathematics, I/O (screen, buzzer, rtc) and macros.
 
-==== 2.4 Program execution
+==== 2.5 Program execution
 
 The EEPROM contains a bootloader that will wait for a program coming from the FTDI (here, FT232RL) and transfer it to the SRAM. Although this is the "default" method, you can flash the EEPROM with a program and run it on rock65 autonomously, without needing a computer connected. 
