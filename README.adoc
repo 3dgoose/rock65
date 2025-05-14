@@ -41,7 +41,7 @@ This project is under development. Components and chips has not been bought.
 
 == Manual
 
-Refer to the https://gitlab.com/3dgoose/rock65/-/blob/main/docs/Developer%20Manual.adoc[Developer Manual] for information, including the datasheet, development guidelines and additional tips.
+Refer to the ./docs/Developer Manual.adoc[Developer Manual] for information, including the datasheet, development guidelines and additional tips.
 https://gitlab.com/3dgoose/librock[librock] is the official SDK for the project.
 
 == Contributing
