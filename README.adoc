@@ -20,28 +20,33 @@ A homebrew breadboard computer based on the https://www.westerndesigncenter.com/
 | PCF8574T I2C Module   | I2C I/O Expander for Keyboard        | https://seli.tn/product/pcf8574t-module-i2c-pour-clavier/[Seli.tn] | 1
 | 128x64 LCD Display    | Monochrome LCD Display 128x64        | https://seli.tn/product/afficheur-lcd-128x64-points-5v-avec-retroeclairage-port-parallele-st/[Seli.tn] | 1
 | RTC DS3231            | Real-Time Clock Module               | https://seli.tn/product/module-horloge-temps-reel/[Seli.tn] | 1
+| KY-012 Buzzer         | Active Buzzer Module 3.5-5.5V        | https://seli.tn/product/ky-012-module-buzzer-actif-3-5-5-5v/[Seli.tn] | 1
+| USB-C Breakout Board  | USB-C 5V Power Input Module          | https://www.tindie.com/products/treedix/usb-type-c-breakout-board/ | 1
+| 1N5819 Schottky Diode | Reverse Polarity Protection Diode    | https://seli.tn/product/diode-schottky-1n5819-1a-40v/[Seli.tn] | 2
 | Tactile Button        | Momentary Push Button 6x6x17mm       | https://seli.tn/product/bouton-tactil-6x6x17mm/[Seli.tn] | 4
 | 5mm Blue LED          | Indicator LED                        | https://seli.tn/product/led-5mm-bleu/[Seli.tn] | 2
-| 10kΩ Resistor         | Pull-up/Pull-down Resistor           | https://seli.tn/product/jeu-de-10-resistances-1-4w-4/?attribute_valeur=10KOHM[Seli.tn] | 10
+| 10kΩ Resistor         | Pull-up/Pull-down Resistor           | https://seli.tn/product/jeu-de-10-resistances-1-4w-4/?attribute_valeur=10KOHM[Seli.tn] | 20
 | 220Ω Resistor         | Current Limiting Resistor for LED    | https://seli.tn/product/jeu-de-10-resistances-1-4w-7/?attribute_valeur=220OHM[Seli.tn] | 10
-| 1kΩ Resistor          | Resistor for FTDI Interface          | https://seli.tn/product/jeu-de-10-resistances-1-4w/[Seli.tn] | 5
-| 10µF Capacitor        | Electrolytic Capacitor               | https://seli.tn/product/condensateur-radial-chimique-10uf/?attribute_tension=16V[Seli.tn] | 2
-| M/M Jumper Wires      | Male-to-Male Jumper Wires            | https://seli.tn/product/jeu-de-10-fils-de-connexion-m-m-20cm-pour-arduino/[Seli.tn] | 20
-| M/F Jumper Wires      | Male-to-Female Jumper Wires          | https://seli.tn/product/jeu-de-10-fils-de-connexion-m-f-20cm-pour-arduino/[Seli.tn] | 10
+| 1kΩ Resistor          | For FTDI or LCD contrast             | https://seli.tn/product/jeu-de-10-resistances-1-4w/[Seli.tn] | 10
+| 100nF Ceramic Cap     | Decoupling Capacitor                 | https://seli.tn/product/condensateur-ceramique/[Seli.tn] | 10
+| 10µF Electrolytic Cap | Filtering Capacitor                  | https://seli.tn/product/condensateur-radial-chimique-10uf/?attribute_tension=16V[Seli.tn] | 4
+| NPN Transistor (2N3904)| General Purpose Switching           | https://seli.tn/product/2n3904-transistor-npn/[Seli.tn] | 2
+| M/M Jumper Wires      | Male-to-Male Jumper Wires            | https://seli.tn/product/jeu-de-10-fils-de-connexion-m-m-20cm-pour-arduino/[Seli.tn] | 40
+| M/F Jumper Wires      | Male-to-Female Jumper Wires          | https://seli.tn/product/jeu-de-10-fils-de-connexion-m-f-20cm-pour-arduino/[Seli.tn] | 20
+| Breadboard (830pts)   | Large Solderless Breadboard          | https://seli.tn/product/breadboard-830-points/[Seli.tn] | 1
 | 9V Battery Connector  | Battery Connector                    | https://seli.tn/product/cordon-pile-9v/[Seli.tn] | 1
-| KY-012 Buzzer         | Active Buzzer Module 3.5-5.5V        | https://seli.tn/product/ky-012-module-buzzer-actif-3-5-5-5v/[Seli.tn] | 1
 | FT232RL FTDI Adapter  | USB to Serial Adapter                | https://seli.tn/product/ft232rl-adaptateur-usb-rs232/[Seli.tn] | 1
 | CH341A Programmer Kit | USB Programmer for EEPROM            | https://seli.tn/product/kit-programmateur-bios-flash-usb-ch341a-pinces-supports/[Seli.tn] | 1
 |===
 
 [NOTE] 
-==== 
-This project is under development. Components and chips has not been bought.
+====
+This project is under development. Components and chips have not yet been purchased.
 ====
 
 == Manual
 
-Refer to the link:/docs/Developer-Manual.adoc[Developer Manual] for information, including the datasheet, development guidelines and additional tips.
+Refer to the link:/docs/Developer-Manual.adoc[Developer Manual] for information, including the datasheet, development guidelines and additional tips.  
 https://gitlab.com/3dgoose/librock[librock] is the official SDK for the project.
 
 == Contributing
