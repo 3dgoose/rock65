@@ -11,16 +11,15 @@ A homebrew SBC based on the https://www.westerndesigncenter.com/wdc/documentatio
 |===
 | Component              | Description                         | Link | Quantity
 
-| W65C02S               | 8-bit Microprocessor                 | https://www.mouser.ca/ProductDetail/Western-Design-Center-WDC/W65C02S6TPG-14?qs=opBjA1TV903lvWo9AEKH5w%3D%3D[W65C02S @ Mouser.ca] | 1
-| AS6C62256             | 32 Kb SRAM                           | https://mou.sr/3Tf51pm[AS6C1008-55PCN @ Mouser.ca] | 1
-| 4MHz Quartz Oscillator| 4 MHz Crystal Oscillator             | https://seli.tn/product/oscillateur-quartz-4mhz/[Seli.tn] | 1
-| 74HC00 NAND Gate      | Quad 2-input NAND Gate               | https://seli.tn/product/7400-ci-4-portes-logiques-non-et/[Seli.tn] | 1
-| PCF8574T I2C Module   | I2C I/O Expander                     | https://seli.tn/product/pcf8574t-module-i2c-pour-clavier/[Seli.tn] | 1
-| 128x64 LCD Display    | Monochrome LCD Display 128x64        | https://seli.tn/product/afficheur-lcd-128x64-points-5v-avec-retroeclairage-port-parallele-st/[Seli.tn] | 1
-| RTC DS3231            | Real-Time Clock Module               | https://seli.tn/product/module-horloge-temps-reel/[Seli.tn] | 1
-| KY-012 Buzzer         | Active Buzzer Module 3.5-5.5V        | https://seli.tn/product/ky-012-module-buzzer-actif-3-5-5-5v/[Seli.tn] | 1
-| USB-C Breakout Board  | USB-C 5V Power Input Module          | https://www.tindie.com/products/treedix/usb-type-c-breakout-board/ | 1
-| Button                | User input                           | https://seli.tn/product/bouton-tactil-6x6x17mm/[Seli.tn] | 4
+| W65C02S               | 8-bit Microprocessor                 | https://mou.sr/3DSJi24[W65C02S @ Mouser.ca] | 1
+| AS6C62256             | 32 Kb SRAM                           | https://mou.sr/3ZsuFtY[AS6C62256 @ Mouser.ca] | 1
+| AT28C256              | 32 Kb EEPROM                         | https://mou.sr/45XQ41O[AT28C256 @ Mouser.ca] | 1
+| 4MHz Quartz Oscillator| 4 MHz Crystal Oscillator             | https://seli.tn/product/oscillateur-quartz-4mhz/[4Mhz Quartz @ Seli.tn] | 1
+| 74HC00 NAND Gate      | Quad 2-input NAND Gate               | https://seli.tn/product/7400-ci-4-portes-logiques-non-et/[NAND @ Seli.tn] | 1
+| 16x2 LCD Display      | Monochrome LCD Display               | https://www.amazon.ca/MECCANIXITY-Module-daffichage-1602-broches/dp/B0B8BQCBS2?crid=2JXWIJK5QBQQ9&dib=eyJ2IjoiMSJ9.yenAjkLk_5J7GCByguLHerj4_AO7l7D_B6PcrSIUoMVz2vdSJHhjnAwdru26s5c8icPzSEohMY8W90cRsIwUvPUZraT4JQunEwlpfey8v9lTvlCewkZq65BCeBqPIdnS7xoh1IvoEJg4XLOQjyeVmIYyp4gQdqr4d8wL0syi27Ih9KUv-nk0efEBUwk18pJ91sijN866mRfjcm8ZgVlhsw.YYgUay5q49HT1hW3snQ7nPwYskuLrtGSxdW5rgCuOsU&dib_tag=se&keywords=16x2+lcd&qid=1769037125&sprefix=16x2+lcd%2Caps%2C260&sr=8-21[16x02 LCD @ Amazon.ca] | 1
+| USB-B Port            | USB-B 5V power input                 | https://seli.tn/product/fiche-usb-b-femelle-sur-chassis-angle-180-deg/[USB-B @ Seli.tn] | 1
+| Button                | User input                           | https://seli.tn/product/bouton-tactil-6x6x17mm/[Tactil Button @ Seli.tn] | 3
+| Passive Buzzer        | Sound output                         | https://seli.tn/product/buzzer-passif-12x9-5mm-3-3-5v/[Passive Buzzer @ Seli.tn]
 | 5mm Blue LED          | Indicator LED                        | https://seli.tn/product/led-5mm-bleu/[Seli.tn] | 1
 |===
 
